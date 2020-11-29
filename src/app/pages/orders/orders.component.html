@@ -1,0 +1,22 @@
+
+  <form #form="ngForm" (ngSubmit)="placeOrder(form)" class="py-3">
+
+    <div class="form-group">
+      <label for="request"><b>Enter Order Request</b></label>
+
+      <div class="input-group mb-3">
+        <input [(ngModel)]="request" name="request" id="request" class="form-control mr-2" [ngbTypeahead]="search" />
+
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Place Order</button>
+        </div>
+      </div>
+
+    </div>
+
+
+  </form>
+
+<hr/>
+
+<app-grid [ordersDisplay]="ordersDisplay"></app-grid>

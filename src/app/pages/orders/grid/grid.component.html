@@ -1,0 +1,24 @@
+<div class="my-auto">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>
+          Received Orders
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of ordersDisplay">
+        <td>
+          {{ order }}
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
